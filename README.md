@@ -85,4 +85,15 @@ Completing the project involves several steps:
 5. Create a CodePipeline pipeline triggered by GitHub checkins
 6. Create a CodeBuild stage which will build, test, and deploy your code
 
-For more detail about each of these steps, see the project lesson.
+## External IP Link
+```bash
+a38a4de36d1b74f83bcbdd5624de508f-1360817851.us-east-2.elb.amazonaws.com
+```
+
+## Api test commands
+```bash
+curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"example@example.com\",\"password\":\"yourpassword\"}" a38a4de36d1b74f83bcbdd5624de508f-1360817851.us-east-2.elb.amazonaws.com
+```
+```bash
+curl -X GET -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODgzMjAwNTYsIm5iZiI6MTY4NzExMDQ1NiwiZW1haWwiOiJleGFtcGxlQGV4YW1wbGUuY29tIn0.cndTuxnuPKBqqSLxUWymzpojWO9G3HERdC_dvYQDB2Y" a38a4de36d1b74f83bcbdd5624de508f-1360817851.us-east-2.elb.amazonaws.com
+```
